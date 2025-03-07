@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>By JenierMods OFC</title>
+    <link rel="stylesheet" href="stylee.css">
+    </style>
+</head>
+<body>
+    <div class="menu-icon" onclick="toggleMenu()">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+    <div class="top-circle">
+        <img src="Imagen/Bolita.png" alt="Icono" id="topImage" onclick="contactCreator()">
+    </div>
+    <div class="container" id="menuContainer" style="display: none;">
+        <h1>Bienvenido todos💉</h1>
+        <div class="button-group">
+            <button id="university" aria-label="Universidad">Universidad</button>
+            <button id="members" aria-label="Integrantes">Integrantes</button>
+            <button id="recommendations" onclick="location.href='integrantes.html'" aria-label="Recomendaciones">Fotos de los integrantes</button>
+              <button id="infodeltrabajo" onclick="location.href='infodeltrabajo.html'" aria-label="Recomendaciones">Conclusión y beneficios del trabajo</button>
+       <button id="video" onclick="location.href='creador.html'">Info del creador</button>
+            <button id="scanQR" onclick="location.href='QR.html'" aria-label="Escanear código QR">Escanear código QR</button>
+        </div>
+    </div>
+    <div id="modalOverlay">
+        <div id="modal">
+            <p id="modalMessage"></p>
+            <button onclick="closeModal()">OK</button>
+        </div>
+    </div>
+    <div id="modalOverlayBolita">
+        <div id="modalBolita">
+            <p>¿Quieres hablar con el creador?</p>
+            <div class="modal-buttons">
+                <button class="cancel" onclick="closeModalBolita()">Cancelar</button>
+                <button class="talk" onclick="confirmContact()">Hablar</button>
+            </div>
+        </div>
+    </div>
+    <div class="music-player">
+        <audio id="backgroundMusic" src="Música/Is There Someone Else.mp3"></audio>
+        <button onclick="playMusic()">▶️ Reproducir</button>
+        <button onclick="pauseMusic()">⏸️ Pausar</button>
+    </div>
+    <script src="mainn.js"></script>
+</body> 
+</html>
