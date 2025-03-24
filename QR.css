@@ -4,7 +4,7 @@
     font-family: Arial, sans-serif;
 }
 
-#selectQRButton {
+button {
     background-color: #4CAF50;
     color: white;
     padding: 15px 20px;
@@ -14,14 +14,15 @@
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
+    margin: 10px;
 }
 
-#selectQRButton:hover {
+button:hover {
     background-color: #45a049;
     transform: scale(1.05);
 }
 
-#selectQRButton:active {
+button:active {
     background-color: #3e8e41;
     transform: scale(0.95);
 }
@@ -45,4 +46,11 @@
     font-size: 18px;
     color: #555;
     word-wrap: break-word;
+}
+
+#video {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-top: 10px;
 }
